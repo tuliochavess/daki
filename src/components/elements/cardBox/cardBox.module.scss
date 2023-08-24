@@ -1,0 +1,29 @@
+.cardBoxContainer {
+  border-radius: 12px;
+  background: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.valueAndTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.value {
+  color: #00133b;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.title {
+  color: rgba(0, 19, 59, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}

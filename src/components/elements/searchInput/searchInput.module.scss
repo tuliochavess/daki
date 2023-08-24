@@ -1,0 +1,27 @@
+.searchInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.searchInputContainer {
+  margin-right: 8px;
+}
+
+.searchInput,
+.searchInput::placeholder {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  color: #00133b;
+}
+
+.searchInput::placeholder {
+  color: #1759ff;
+}

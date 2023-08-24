@@ -1,0 +1,25 @@
+.contetContainer {
+  width: 950px;
+  height: 880px;
+  border-radius: 0px 0px 32px 0px;
+  background: #f3f0ed;
+  padding: 0 20px;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  margin-top: 32px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 20px;
+}

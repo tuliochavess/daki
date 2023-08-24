@@ -1,0 +1,26 @@
+.chartBoxContainer {
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px;
+}
+
+.title {
+  color: #00133b;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.upperRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.separator {
+  border-top: 1px dashed #c2cad4;
+  background: transparent;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: 32px;
+}

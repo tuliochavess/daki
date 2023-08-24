@@ -1,0 +1,31 @@
+.userDropdownContainer {
+  display: flex;
+  align-items: center;
+}
+
+.bellIcon {
+  margin-right: 24px;
+  width: 14px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.logoCompanyArrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.companyLogo {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.companyName {
+  color: #1759ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-right: 20px;
+}

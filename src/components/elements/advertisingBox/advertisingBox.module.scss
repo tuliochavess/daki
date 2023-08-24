@@ -1,0 +1,45 @@
+.advertisingBoxContainer {
+  width: 100%;
+  border-radius: 12px;
+  background: #c9ddff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  margin-bottom: 12px;
+}
+
+.sparator {
+  background: #1759ff;
+  height: 1px;
+  width: 99.9%;
+}
+
+.donwloadBox {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadTitle {
+  color: #00133b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.appleAndroid {
+    margin-top: 12px;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.apple {
+    margin-right: 12px;
+}
