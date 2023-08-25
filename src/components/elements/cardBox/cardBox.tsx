@@ -22,7 +22,7 @@ export default function CardBox(props: Props) {
       );
     if (type === "client")
       return <CardIcon icon={user} backGroundColor="#C9DDFF" />;
-    if (type === "client")
+    if (type === "newClient")
       return (
         <CardIcon icon={userPlus} backGroundColor="rgba(91, 36, 255, 0.25)" />
       );
