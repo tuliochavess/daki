@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useRequest from "../../../hooks/useRequest/use-request";
 import CardBox from "../../elements/cardBox";
 import ChartBox from "../../elements/chartBox/chartBox";
@@ -15,8 +15,35 @@ interface Props {
   barCodeValue: string;
 }
 
+type WeekRange = {
+  start: number;
+  end: number;
+};
+
 export default function Content(props: Props) {
   const api = useRequest<DataItem>();
+  const [salesWeek, setSalesWeek] = useState({ start: 1, end: 7 });
+  const [unityWeek, setUnityWeek] = useState({ start: 1, end: 7 });
+  const [clientsWeek, setClientsWeek] = useState({ start: 1, end: 7 });
+  const [newClientsWeek, setNewClientsWeek] = useState({ start: 1, end: 7 });
+
+  function setDateRange(value: string, key: string) {
+    const weekMap: Record<string, WeekRange> = {
+      "Semana 1": { start: 1, end: 7 },
+      "Semana 2": { start: 8, end: 14 },
+      "Semana 3": { start: 15, end: 21 },
+      "Semana 4": { start: 22, end: 31 },
+    };
+
+    const selectedWeek = weekMap[value];
+
+    if (selectedWeek) {
+      if (key === "SALES_LC") setSalesWeek(selectedWeek);
+      if (key === "QUANTITY_SOLD") setUnityWeek(selectedWeek);
+      if (key === "CUSTOMERS") setClientsWeek(selectedWeek);
+      if (key === "NEW_CUSTOMERS") setNewClientsWeek(selectedWeek);
+    }
+  }
 
   useEffect(() => {
     api.fetchApi({
@@ -53,23 +80,47 @@ export default function Content(props: Props) {
       <div className={styles.charts}>
         <ChartBox
           title="Valor em vendas"
-          data={RenderChartData(api.data, 1, 7, "SALES_LC")}
+          data={RenderChartData(
+            api.data,
+            salesWeek.start,
+            salesWeek.end,
+            "SALES_LC"
+          )}
           chartColor="#6FB307"
+          onChange={(x) => setDateRange(x, "SALES_LC")}
         />
         <ChartBox
           title="Unidades vendidas"
-          data={RenderChartData(api.data, 1, 7, "QUANTITY_SOLD")}
+          data={RenderChartData(
+            api.data,
+            unityWeek.start,
+            unityWeek.end,
+            "QUANTITY_SOLD"
+          )}
           chartColor="#009C8A"
+          onChange={(x) => setDateRange(x, "QUANTITY_SOLD")}
         />
         <ChartBox
           title="Clientes"
-          data={RenderChartData(api.data, 1, 7, "CUSTOMERS")}
+          data={RenderChartData(
+            api.data,
+            clientsWeek.start,
+            clientsWeek.end,
+            "CUSTOMERS"
+          )}
           chartColor="#1759FF"
+          onChange={(x) => setDateRange(x, "CUSTOMERS")}
         />
         <ChartBox
           title="Novos clientes"
-          data={RenderChartData(api.data, 1, 7, "NEW_CUSTOMERS")}
+          data={RenderChartData(
+            api.data,
+            newClientsWeek.start,
+            newClientsWeek.end,
+            "NEW_CUSTOMERS"
+          )}
           chartColor="#5B24FF"
+          onChange={(x) => setDateRange(x, "NEW_CUSTOMERS")}
         />
       </div>
     </div>

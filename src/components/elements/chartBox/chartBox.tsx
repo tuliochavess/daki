@@ -12,6 +12,7 @@ interface Props {
   data: ChartData[];
   chartColor: string;
   label?: string;
+  onChange: (x: string) => void;
 }
 
 export default function ChartBox(props: Props) {
@@ -21,7 +22,7 @@ export default function ChartBox(props: Props) {
     <div className={styles.chartBoxContainer}>
       <div className={styles.upperRow}>
         <span className={styles.title}>{props.title}</span>
-        <WeekSelect options={weeks} />
+        <WeekSelect options={weeks} onChange={props.onChange} />
       </div>
       <hr className={styles.separator} />
       <div className={styles.chart}>
