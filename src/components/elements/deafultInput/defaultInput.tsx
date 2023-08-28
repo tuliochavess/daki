@@ -6,19 +6,19 @@ interface Props {
   type: "date" | "select";
   label: string;
   options?: string[];
+  onChange?: (value: string) => void;
 }
 
 export default function DefaultInput(props: Props) {
   function renderInput(input: string, options?: string[]) {
     if (input === "date") return <DateInput />;
-    if (input === "select") return <SelectInput options={options!} />;
+    if (input === "select")
+      return <SelectInput options={options!} onChange={props.onChange!} />;
   }
 
   return (
     <div className={styles.defaultInputContainer}>
-      <label htmlFor="" className={styles.label}>
-        {props.label}
-      </label>
+      <label className={styles.label}>{props.label}</label>
       {renderInput(props.type, props.options)}
     </div>
   );

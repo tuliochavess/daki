@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Content from "../components/sections/content/content";
 import Header from "../components/sections/header/header";
 import Sidebar from "../components/sections/sidebar/sidebar";
@@ -13,12 +14,14 @@ export default function Dashboard() {
     "Market Share e concorrência",
     "Supply",
   ];
+  const [cityValue, setCityValue] = useState("");
+
   return (
     <div className={styles.dashboardContainer}>
       <Header />
       <div className={styles.sidebarAndContent}>
-        <Sidebar />
-        <Content itemList={upperMenuList} />
+        <Sidebar cityValue={(x) => setCityValue(x)} />
+        <Content itemList={upperMenuList} cityValue={cityValue} />
       </div>
     </div>
   );

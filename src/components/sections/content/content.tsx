@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useRequest from "../../../hooks/useRequest/use-request";
 import CardBox from "../../elements/cardBox";
 import ChartBox from "../../elements/chartBox/chartBox";
@@ -9,18 +9,21 @@ import { DataItem } from "../../../api/request/db-request";
 
 interface Props {
   itemList: string[];
+  cityValue: string;
 }
 
 export default function Content(props: Props) {
-  const [data, setData] = useState<DataItem[]>([]);
   const api = useRequest();
 
   useEffect(() => {
-    setData(api.data);
-  }, [api.data, api.filters]);
+    api.fetchApi({
+      method: "GET",
+      data: props.cityValue ? { CITY_CODE: props.cityValue } : {},
+    });
+  }, [props]);
 
   function renderTotal(property: keyof DataItem): string {
-    const total = data.reduce((accumulator, currentValue) => {
+    const total = api.data.reduce((accumulator, currentValue) => {
       const propertyValue = currentValue[property] as number;
       return accumulator + propertyValue;
     }, 0);

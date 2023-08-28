@@ -1,30 +1,83 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { DataItem } from "../../api/request/db-request";
 
-function useRequest() {
-  const [data, setData] = useState<DataItem[]>([]);
-  const [filters, setFilters] = useState<DataItem>();
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const queryParams = new URLSearchParams(
-        filters as unknown as Record<string, string>
-      );
-      const apiUrl = `http://localhost:3000/data?${queryParams.toString()}`;
+const url = "http://localhost:3000/data";
 
-      try {
-        const response = await fetch(apiUrl);
-        const responseData = await response.json();
-        setData(responseData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, [filters]);
-
-  return { data, filters, setFilters };
+interface RequestOptions {
+  method: HttpMethod;
+  data?: object;
 }
 
-export default useRequest;
+interface ApiResponse<T> {
+  data?: T;
+  error: null;
+}
+
+export default function useRequest<T>() {
+  const [response, setResponse] = useState<ApiResponse<T> | undefined>();
+  const [data, setData] = useState<DataItem[]>([]);
+
+  async function fetchApi(options: RequestOptions) {
+    try {
+      const { data, method = "GET" } = options;
+      const isGet = method === "GET";
+
+      const queryParams = isGet ? getParams(data) : "";
+      const body = getBody(isGet, data);
+
+      const response = await fetch(`${url}${queryParams}`, {
+        method: options.method,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body,
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      const responseData = await response.json();
+      setData(responseData);
+
+      setResponse({ data: responseData, error: null });
+    } catch (error) {
+      setResponse({ data: undefined, error: null });
+    }
+  }
+
+  return { data, response, fetchApi };
+}
+
+function getBody(isGet: boolean, data?: object | FormData) {
+  if (isGet || !data) {
+    return undefined;
+  }
+  if (data instanceof FormData) {
+    return data;
+  }
+  return JSON.stringify(data);
+}
+
+const getParamsFromEntries = (entries: [string, unknown][]): string =>
+  entries
+    .map(([key, value]) => {
+      if (Array.isArray(value)) {
+        return getParamsFromEntries(value.map((v) => [key, v]));
+      }
+
+      return `${key}=${value as string}`;
+    })
+    .join("&");
+
+export function getParams(params?: object) {
+  if (!params) return "";
+
+  const str = getParamsFromEntries(
+    Object.entries(params).filter(([, value]) => value !== undefined)
+  );
+
+  return "?" + str;
+}

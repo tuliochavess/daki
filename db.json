@@ -12,10 +12,10 @@
       "NEW_CUSTOMERS": 14
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-19",
       "SALES_LC": 564,
       "QUANTITY_SOLD": 81,
@@ -34,10 +34,10 @@
       "NEW_CUSTOMERS": 27
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "1",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-12",
       "SALES_LC": 716,
       "QUANTITY_SOLD": 27,
@@ -56,7 +56,7 @@
       "NEW_CUSTOMERS": 5
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -67,10 +67,10 @@
       "NEW_CUSTOMERS": 23
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "1",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-09",
       "SALES_LC": 637,
       "QUANTITY_SOLD": 55,
@@ -78,10 +78,10 @@
       "NEW_CUSTOMERS": 5
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-20",
       "SALES_LC": 404,
       "QUANTITY_SOLD": 56,
@@ -89,10 +89,10 @@
       "NEW_CUSTOMERS": 16
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-03",
       "SALES_LC": 420,
       "QUANTITY_SOLD": 49,
@@ -100,7 +100,7 @@
       "NEW_CUSTOMERS": 7
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -122,10 +122,10 @@
       "NEW_CUSTOMERS": 3
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-29",
       "SALES_LC": 404,
       "QUANTITY_SOLD": 56,
@@ -144,7 +144,7 @@
       "NEW_CUSTOMERS": 2
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -155,7 +155,7 @@
       "NEW_CUSTOMERS": 6
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -166,7 +166,7 @@
       "NEW_CUSTOMERS": 11
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "2",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -177,7 +177,7 @@
       "NEW_CUSTOMERS": 4
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -188,7 +188,7 @@
       "NEW_CUSTOMERS": 9
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "3",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -232,7 +232,7 @@
       "NEW_CUSTOMERS": 26
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "2",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -246,7 +246,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "BH",
       "BARCODE": "6",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-09",
       "SALES_LC": 545,
       "QUANTITY_SOLD": 40,
@@ -254,7 +254,7 @@
       "NEW_CUSTOMERS": 10
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "2",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -279,7 +279,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "BH",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-02",
       "SALES_LC": 345,
       "QUANTITY_SOLD": 39,
@@ -287,10 +287,10 @@
       "NEW_CUSTOMERS": 14
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-28",
       "SALES_LC": 671,
       "QUANTITY_SOLD": 33,
@@ -298,10 +298,10 @@
       "NEW_CUSTOMERS": 8
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-11",
       "SALES_LC": 193,
       "QUANTITY_SOLD": 21,
@@ -312,7 +312,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "RJ",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-20",
       "SALES_LC": 620,
       "QUANTITY_SOLD": 86,
@@ -331,10 +331,10 @@
       "NEW_CUSTOMERS": 7
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "4",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-17",
       "SALES_LC": 218,
       "QUANTITY_SOLD": 20,
@@ -345,7 +345,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "SP",
       "BARCODE": "6",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-09",
       "SALES_LC": 569,
       "QUANTITY_SOLD": 87,
@@ -397,10 +397,10 @@
       "NEW_CUSTOMERS": 18
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-15",
       "SALES_LC": 111,
       "QUANTITY_SOLD": 50,
@@ -408,7 +408,7 @@
       "NEW_CUSTOMERS": 2
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "1",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -422,7 +422,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "SP",
       "BARCODE": "6",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-27",
       "SALES_LC": 557,
       "QUANTITY_SOLD": 48,
@@ -430,7 +430,7 @@
       "NEW_CUSTOMERS": 7
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "BH",
       "BARCODE": "1",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -441,7 +441,7 @@
       "NEW_CUSTOMERS": 0
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "RJ",
       "BARCODE": "5",
       "FULL_PRODUCT_NAME": "Qualy",
@@ -474,10 +474,10 @@
       "NEW_CUSTOMERS": 0
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "7",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-23",
       "SALES_LC": 129.628548,
       "QUANTITY_SOLD": 16.2857,
@@ -499,7 +499,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "BH",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-13",
       "SALES_LC": 380,
       "QUANTITY_SOLD": 99,
@@ -507,10 +507,10 @@
       "NEW_CUSTOMERS": 22
     },
     {
-      "BRAND_NAME": "Sadia Premium",
+      "BRAND_NAME": "SadiaPremium",
       "CITY_CODE": "SP",
       "BARCODE": "6",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-22",
       "SALES_LC": 184.543535,
       "QUANTITY_SOLD": 33.2764,
@@ -521,7 +521,7 @@
       "BRAND_NAME": "Sadia",
       "CITY_CODE": "BH",
       "BARCODE": "2",
-      "FULL_PRODUCT_NAME": "Peito de Frango",
+      "FULL_PRODUCT_NAME": "PeitoDeFrango",
       "DATE": "2023-08-07",
       "SALES_LC": 472,
       "QUANTITY_SOLD": 51,
