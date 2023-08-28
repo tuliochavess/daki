@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import styles from "./chartBox.module.scss";
 
 interface ChartData {
-  dia: string;
+  dia: string | number;
   total: number;
 }
 

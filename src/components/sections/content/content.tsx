@@ -3,9 +3,9 @@ import useRequest from "../../../hooks/useRequest/use-request";
 import CardBox from "../../elements/cardBox";
 import ChartBox from "../../elements/chartBox/chartBox";
 import UpperMenu from "../../elements/upperMenu/upperMenu";
-import { data1, data2, data3, data4 } from "./chartData";
 import styles from "./content.module.scss";
 import { DataItem } from "../../../api/request/db-request";
+import RenderChartData from "./renderChart";
 
 interface Props {
   itemList: string[];
@@ -51,10 +51,26 @@ export default function Content(props: Props) {
         <CardBox type="newClient" value={renderTotal("NEW_CUSTOMERS")} />
       </div>
       <div className={styles.charts}>
-        <ChartBox title="Valor em vendas" data={data1} chartColor="#6FB307" />
-        <ChartBox title="Unidades vendidas" data={data2} chartColor="#009C8A" />
-        <ChartBox title="Clientes" data={data3} chartColor="#1759FF" />
-        <ChartBox title="Novos clientes" data={data4} chartColor="#5B24FF" />
+        <ChartBox
+          title="Valor em vendas"
+          data={RenderChartData(api.data, 1, 7, "SALES_LC")}
+          chartColor="#6FB307"
+        />
+        <ChartBox
+          title="Unidades vendidas"
+          data={RenderChartData(api.data, 1, 7, "QUANTITY_SOLD")}
+          chartColor="#009C8A"
+        />
+        <ChartBox
+          title="Clientes"
+          data={RenderChartData(api.data, 1, 7, "CUSTOMERS")}
+          chartColor="#1759FF"
+        />
+        <ChartBox
+          title="Novos clientes"
+          data={RenderChartData(api.data, 1, 7, "NEW_CUSTOMERS")}
+          chartColor="#5B24FF"
+        />
       </div>
     </div>
   );
