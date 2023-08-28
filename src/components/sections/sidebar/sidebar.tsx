@@ -6,14 +6,17 @@ import styles from "./sidebar.module.scss";
 
 interface Props {
   cityValue: (value: string) => void;
+  brandValue: (value: string) => void;
+  productValue: (value: string) => void;
+  barCodeValue: (value: string) => void;
 }
 
 export default function Sidebar(props: Props) {
   const cityOptions = ["BH", "SP", "RJ"];
   const brandOptions = ["Sadia Premium", "Sadia"];
   const correncyOptions = ["Real", "Dolar"];
-  const productOptions = ["Margarina Qualy", "Peito de Frango"];
-  const barcodeOptions = ["000011111", "00002222", "00003333"];
+  const productOptions = ["Peito de Frango", "Qualy"];
+  const barcodeOptions = ["1", "2", "3", "4", "5", "6", "7"];
 
   return (
     <div className={styles.sidebarContainer}>
@@ -32,7 +35,14 @@ export default function Sidebar(props: Props) {
           />
         </div>
         <div className={styles.inputRow}>
-          <DefaultInput type="select" label="Marca" options={brandOptions} />
+          <DefaultInput
+            type="select"
+            label="Marca"
+            options={brandOptions}
+            onChange={(x) => {
+              props.brandValue(x);
+            }}
+          />
         </div>
         <div className={styles.inputRow}>
           <DefaultInput type="select" label="Moeda" options={correncyOptions} />
@@ -42,6 +52,9 @@ export default function Sidebar(props: Props) {
             type="select"
             label="Produto"
             options={productOptions}
+            onChange={(x) => {
+              props.productValue(x);
+            }}
           />
         </div>
         <div className={styles.inputRow}>
@@ -49,6 +62,9 @@ export default function Sidebar(props: Props) {
             type="select"
             label="Barcode"
             options={barcodeOptions}
+            onChange={(x) => {
+              props.barCodeValue(x);
+            }}
           />
         </div>
         <div className={styles.button}>

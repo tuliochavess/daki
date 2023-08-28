@@ -68,7 +68,7 @@ const getParamsFromEntries = (entries: [string, unknown][]): string =>
         return getParamsFromEntries(value.map((v) => [key, v]));
       }
 
-      return `${key}=${value as string}`;
+      return value ? `${key}=${value}` : null;
     })
     .join("&");
 
@@ -76,7 +76,7 @@ export function getParams(params?: object) {
   if (!params) return "";
 
   const str = getParamsFromEntries(
-    Object.entries(params).filter(([, value]) => value !== undefined)
+    Object.entries(params).filter(([value]) => value !== undefined)
   );
 
   return "?" + str;

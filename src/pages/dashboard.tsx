@@ -14,14 +14,29 @@ export default function Dashboard() {
     "Market Share e concorrência",
     "Supply",
   ];
+
   const [cityValue, setCityValue] = useState("");
+  const [brandValue, setBrandValue] = useState("");
+  const [productValue, setProductValue] = useState("");
+  const [barCodeValue, setBarCodeValue] = useState("");
 
   return (
     <div className={styles.dashboardContainer}>
       <Header />
       <div className={styles.sidebarAndContent}>
-        <Sidebar cityValue={(x) => setCityValue(x)} />
-        <Content itemList={upperMenuList} cityValue={cityValue} />
+        <Sidebar
+          cityValue={(x) => setCityValue(x)}
+          brandValue={(x) => setBrandValue(x)}
+          productValue={(x) => setProductValue(x)}
+          barCodeValue={(x) => setBarCodeValue(x)}
+        />
+        <Content
+          itemList={upperMenuList}
+          cityValue={cityValue}
+          brandValue={brandValue}
+          productValue={productValue}
+          barCodeValue={barCodeValue}
+        />
       </div>
     </div>
   );
